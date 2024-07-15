@@ -58,9 +58,9 @@ const ZipXeon = JSON.parse(fs.readFileSync('./database/autoreply/zip.json'))
 const ApkXeon = JSON.parse(fs.readFileSync('./database/autoreply/apk.json'))
 
 //time
-const xtime = moment.tz('Asia/Kolkata').format('HH:mm:ss')
-        const xdate = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
-        const time2 = moment().tz('Asia/Kolkata').format('HH:mm:ss')  
+const xtime = moment.tz('Africa/Khartoum').format('HH:mm:ss')
+        const xdate = moment.tz('Africa/Khartoum').format('DD/MM/YYYY')
+        const time2 = moment().tz('Africa/Khartoum').format('HH:mm:ss')  
          if(time2 < "23:59:00"){
 var xeonytimewisher = `Good Night 🌌`
  }
@@ -222,7 +222,7 @@ async function loading () {
 var xeonlod = [
 "《 █▒▒▒▒▒▒▒▒▒▒▒》10%",
 "《 ████▒▒▒▒▒▒▒▒》30%",
-"《 ███████▒▒Tech-God▒▒▒》50%",
+"《 ███████▒▒MIDO▒▒▒》50%",
 "《 ██████████▒▒》80%",
 "《 ████████████》100%",
 "𝙻𝙾𝙰𝙳𝙸𝙽𝙶 𝙲𝙾𝙼𝙿𝙻𝙴𝚃𝙴𝙳 🐛..."
@@ -262,7 +262,7 @@ await XeonBotInc.sendMessage(from, {text: xeonlod[i], edit: key });
         }
         
         if (autobio) {
-            XeonBotInc.updateProfileStatus(`24/7 Online Bot. *Youtube search- Tech God* user ${ownername}`).catch(_ => _)
+            XeonBotInc.updateProfileStatus(`24/7 Online Bot. user ${ownername}`).catch(_ => _)
         }
         if (m.sender.startsWith('92') && global.anti92 === true) {
             return XeonBotInc.updateBlockStatus(m.sender, 'block')
@@ -650,7 +650,7 @@ senddocu(buffer)
                         contextInfo: {
                             externalAdReply: {
                                 showAdAttribution: true,
-                                title: 'Broadcast By Tech God',
+                                title: 'Broadcast By MIDO',
                                 body: `Sent ${i.length} Group`,
                                 thumbnailUrl: 'https://i.ibb.co/5hYWrRH/thumb.png',
                                 sourceUrl: global.link,
@@ -974,7 +974,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
             case 'buypremium':
             case 'buyprem':
             case 'premium': {
-                let teks = `Hi ${pushname}👋\nWant to Buy Premium? Just chat with the Tech God wa.me/917466008456 😉`
+                let teks = `Hi ${pushname}👋\nWant to Buy Premium? Just chat with the MIDO wa.me/249923561274 😉`
                 await XeonBotInc.sendMessage(m.chat, {
                     text: teks,
                     contextInfo: {
@@ -1001,7 +1001,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                         externalAdReply: {
                             showAdAttribution: true,
                             title: `${botname}`,
-                            body: `youtube Tech God`,
+                            body: `youtube MIDO`,
                             thumbnailUrl: 'https://i.ibb.co/5hYWrRH/thumb.png',
                             sourceUrl: global.link,
                             mediaType: 1,
@@ -1016,13 +1016,13 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
             case 'script':
             case 'repo':
                 XeonBotInc.sendMessage(m.chat, {
-                    text: `repo https://github.com/techgod143/TECH-GOD-BUG-BOT
-		    youtube www.youtube.com/@techgod143`,
+                    text: `repo https://github.com/MIDO-11/TECH-GOD-BUG-BOT
+		    youtube www.youtube.com/@`,
                     contextInfo: {
                         externalAdReply: {
                             showAdAttribution: true,
                             title: `${botname}`,
-                            body: `SCRIPT OF ${botname} is on YouTube www.youtube.com/@techgod143`,
+                            body: `SCRIPT OF ${botname} is on YouTube www.youtube.com/@`,
                             thumbnailUrl: 'https://i.ibb.co/5hYWrRH/thumb.png',
                             sourceUrl: global.link,
                             mediaType: 1,
@@ -1037,7 +1037,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
             case 'donasi':
                 let textnate = `Hello Brother ${pushname}\n\nNo matter how much you donate is very valuable for us`
                 XeonBotInc.sendMessage(m.chat, {
-                    text: 'Upi: number 9012008456\n\n' + textnate
+                    text: 'Upi: number 249923561274\n\n' + textnate
                 }, {
                     quoted: m
                 })
